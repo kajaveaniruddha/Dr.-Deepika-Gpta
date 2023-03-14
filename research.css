@@ -26,8 +26,8 @@
     background: #181818;
     min-height: 100vh;
     width: 160px;
-    /* position: fixed; */
-    overflow-x: hidden;
+      position: fixed;
+      overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
     margin-right: 0.6%;
     transition: color 0.1s;
   }
-  
+
   .resume-button:before {
     content: "";
     cursor: pointer;
@@ -120,7 +120,7 @@
   
   .TextArea h1 {
     color: #fff;
-    font-family: coolvetica;
+      font-family: coolvetica, serif;
     letter-spacing: 3px;
     font-weight: 550;
     font-size: 103px;
@@ -187,12 +187,13 @@
     min-height: 100vh;
     position: relative;
     width: 90%;
+    left: 160px;
     display: block;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
 
 }
-
-
 
 
 .Research {
@@ -412,6 +413,7 @@
       height: 3rem;
       min-height: 5vh;
       top: 0;
+        position: relative;
       right: 0;
     }
   
@@ -469,6 +471,10 @@
       display: flex;
       justify-content: center;
     }
+
+      #ResearchPage {
+          left: 0;
+      }
   }
   
   @media screen and (max-width: 552px) {

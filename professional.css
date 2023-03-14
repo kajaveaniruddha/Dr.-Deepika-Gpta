@@ -26,7 +26,7 @@ body {
     background: #181818;
     min-height: 100vh;
     width: 160px;
-    /* position: fixed; */
+     position: fixed;
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
@@ -181,7 +181,7 @@ body {
   } */
 
 
-/* --------------Research-------------- */
+/* --------------Professional-------------- */
 
 #ResearchPage {
     min-height: 100vh;
@@ -189,6 +189,9 @@ body {
     width: 90%;
     display: block;
     box-sizing: border-box;
+    left: 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
 
 }
 
@@ -413,6 +416,7 @@ body {
         min-height: 5vh;
         top: 0;
         right: 0;
+        position: relative;
     }
 
     .sidenav .box ul li {
@@ -468,6 +472,10 @@ body {
     .sidenav.responsive .box2 .fancyfonts {
         display: flex;
         justify-content: center;
+    }
+
+    #ResearchPage {
+        left: 0;
     }
 }
 
