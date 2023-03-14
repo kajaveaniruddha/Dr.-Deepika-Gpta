@@ -130,7 +130,7 @@ body {
 
 .TextArea h1 {
   color: #fff;
-  font-family: coolvetica;
+  font-family: coolvetica, serif;
   letter-spacing: 3px;
   font-weight: 550;
   font-size: 103px;
@@ -198,8 +198,19 @@ body {
   width: 50%;
 }
 
+.Contact_head h1{
+  color: #08fdd8;
+  font-family: coolvetica, serif;
+  letter-spacing: 3px;
+  font-weight: 550;
+  font-size: 103px;
+  line-height: 1em;
+  position: relative;
+  margin-right: -4px;
+}
 
-.fake-h2, h2 {
+
+/* .fake-h2, h2 {
   font-family: "Georgia";
   color: #08fdd8;
   font-weight: 700;
@@ -212,7 +223,11 @@ body {
 
 .fake-h2 {
   display: none
-}
+} */
+
+/* #other_h2{
+  color: #08fdd8;
+} */
 
 .contact-des-div {
   width: 100%;
@@ -263,6 +278,7 @@ body {
   background-color: rgb(43, 43, 43);
   width: 80%;
   border-width: 0;
+  font-family: "Arial";
   box-sizing: border-box;
   position: relative;
   height: 100px;
@@ -270,7 +286,7 @@ body {
   margin-left: 6%;
   margin-top: 2%;
   margin-bottom: 1.5%;
-  text-indent: 15px;
+  padding: 15px;
 }
 
 .contact-form .flat-button.disabled {

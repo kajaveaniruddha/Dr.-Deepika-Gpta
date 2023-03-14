@@ -119,8 +119,8 @@ body {
 }
 
 .TextArea h1 {
-  color: #fff;
-  font-family: coolvetica;
+  color: #08fdd8;
+  font-family: coolvetica, serif;
   letter-spacing: 3px;
   font-weight: 550;
   font-size: 103px;
@@ -129,10 +129,10 @@ body {
   margin-right: -4px;
 }
 
-.TextArea h1 span:hover {
+/* .TextArea h1 span:hover {
   color: #0cf2cf;
   transition: 0.4s ease-in-out;
-}
+} */
 
 /* .home {
     align-items: center;
