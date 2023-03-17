@@ -36,13 +36,13 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.Dimg {
+.sidePhoto {
   width: 60px;
   padding-top: 15px;
   height: 75px;
 }
 
-.Dimg-font {
+.sidePhoto-font {
   width: 75px;
   padding-bottom: 10px;
 }
