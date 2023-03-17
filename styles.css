@@ -24,16 +24,16 @@ body {
 
 .sidenav {
   background: #181818;
-  min-height: 100vh;
+  min-height: 100%;
   width: 160px;
-  /* position: fixed; */
+   position: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .Dimg {
@@ -82,6 +82,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: 160px;
   width: 100%;
 }
 
@@ -96,6 +98,7 @@ body {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  margin-right: 0.6%;
   transition: color 0.1s;
 }
 
@@ -127,7 +130,7 @@ body {
 
 .TextArea h1 {
   color: #fff;
-  font-family: coolvetica;
+  font-family: coolvetica, serif;
   letter-spacing: 3px;
   font-weight: 550;
   font-size: 103px;
@@ -176,7 +179,9 @@ body {
   animation: scroll 0.5s linear infinite alternate-reverse;
 }
 
+
 /*---------Contact--------------*/
+
 
 .page-out {
   align-items: center;
@@ -193,8 +198,19 @@ body {
   width: 50%;
 }
 
-.fake-h2,
-h2 {
+.Contact_head h1{
+  color: #08fdd8;
+  font-family: coolvetica, serif;
+  letter-spacing: 3px;
+  font-weight: 550;
+  font-size: 103px;
+  line-height: 1em;
+  position: relative;
+  margin-right: -4px;
+}
+
+
+/* .fake-h2, h2 {
   font-family: "Georgia";
   color: #08fdd8;
   font-weight: 700;
@@ -206,12 +222,17 @@ h2 {
 }
 
 .fake-h2 {
-  display: none;
-}
+  display: none
+} */
+
+/* #other_h2{
+  color: #08fdd8;
+} */
 
 .contact-des-div {
   width: 100%;
 }
+
 
 .contact-des {
   color: rgb(255, 255, 255);
@@ -250,12 +271,14 @@ h2 {
   transition: color 0.1s;
 }
 
+
 .input__field_input__field--hoshi-msg {
   display: inline-block;
   color: rgb(141, 141, 141);
   background-color: rgb(43, 43, 43);
   width: 80%;
   border-width: 0;
+  font-family: "Arial";
   box-sizing: border-box;
   position: relative;
   height: 100px;
@@ -263,12 +286,12 @@ h2 {
   margin-left: 6%;
   margin-top: 2%;
   margin-bottom: 1.5%;
-  text-indent: 15px;
+  padding: 15px;
 }
 
 .contact-form .flat-button.disabled {
   opacity: 0.3;
-  pointer-events: none;
+  pointer-events: none
 }
 
 .flat-button:before {
@@ -293,7 +316,7 @@ h2 {
   margin-right: 2%;
   height: 90%;
   outline: auto;
-  top: 15%;
+  top: 15%
 }
 
 .map-container {
@@ -325,9 +348,15 @@ h2 {
 #contact ul li input {
   width: 80%;
   margin-left: 6%;
-  margin-top: 2%;
+  margin-top: 2%;;
   margin-bottom: 0.3%;
 }
+
+#google-map {
+  height: 100%;
+  width: 50%;
+}
+
 
 @keyframes scroll {
   0% {
@@ -355,7 +384,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 990px){
   #map {
     width: 0;
     display: none;
@@ -384,6 +413,10 @@ h2 {
     display: block;
   }
 
+  .InnerPage {
+    margin-left: 0;
+  }
+
   .InnerPage .resume-button {
     top: 0;
     left: 0.5rem;
@@ -392,6 +425,7 @@ h2 {
   }
 
   .sidenav {
+    position: relative;
     float: right;
     width: 3rem;
     height: 3rem;
@@ -460,4 +494,5 @@ h2 {
   h2 {
     font-size: 75px;
   }
+
 }
