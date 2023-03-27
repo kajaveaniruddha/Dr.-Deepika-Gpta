@@ -1,122 +1,9 @@
-@font-face {
-  font-family: "coolvetica";
-  src: url("fonts/coolvetica-rg.ttf") format("truetype");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-body {
-  background: #1d1d1d;
-  letter-spacing: 0.5px;
-  font-family: "open Sans", sans-serif;
-  text-size-adjust: 100%;
-}
-
-.HomePage {
-  display: flex;
-}
-
-.sidenav {
-  background: #181818;
+.InnerPage {
   min-height: 100vh;
-  width: 160px;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  .sidePhoto {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin-top: 15px;
-  }
-  
-  .sidePhoto-font {
-    width: 75px;
-    padding-bottom: 10px;
-  }
-  
-  .sidenav .box1 ul li a {
-    border-bottom: 1.5px solid #232323;
-    font-size: 17px;
-  }
-  
-  .sidenav .box1 ul li a {
-    padding: 15px;
-    color: #888888;
-    display: block;
-  }
-  
-  .box1 ul li a:hover {
-    color: #0cf2cf;
-    transition: 0.4s ease-in-out;
-  }
-  
-  .box2 ul li {
-    display: inline-flex;
-    padding: 2rem 7px;
-  }
-  
-  .box2 ul li a {
-    color: #888888;
-  }
-  
-  .box2 ul li a:hover {
-    color: #0cf2cf;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .InnerPage {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    width: 100%;
-  }
-  
-  .resume-button {
-    border: 1px solid #08fdd8;
-    background-color: transparent;
-    color: #08fdd8;
-    box-sizing: border-box;
-    z-index: 1;
-    font-size: 16px;
-    padding: 8px 20px 8px 20px;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    margin-right: 0.6%;
-    transition: color 0.1s;
-  }
-
-.resume-button:before {
-  content: "";
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #08fdd82b;
-  transform: scaleX(0);
-  transform-origin: 0;
-  transition: transform 0.3s ease-out;
-}
-
-.resume-button:hover:before {
-  transform: scaleX(1);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .TextArea h1 {
@@ -124,13 +11,11 @@ body {
   font-family: coolvetica, serif;
   letter-spacing: 3px;
   font-weight: 550;
-  font-size: 103px;
+  font-size: calc(60px + 6 * ((100vw - 320px) / 300));
   line-height: 1em;
   position: relative;
-  margin-right: -4px;
+  margin-left: 20px;
 }
-
-/* --------------Research-------------- */
 
 #ResearchPage {
   min-height: 100vh;
@@ -143,7 +28,7 @@ body {
 .Research {
   display: flex;
   align-items: center;
-  padding: 50px 0 0 3%;
+  padding: 50px 10px 10px 10px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -172,7 +57,6 @@ body {
 
 .ag-format-container {
   margin-top: 50px;
-  width: 1142px;
 }
 
 .ag-courses_box {
@@ -184,39 +68,38 @@ body {
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
-  padding: 50px 0;
+  padding: 25px 0;
+  justify-content: center;
 }
 
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
-
   margin: 0 15px 30px;
-
   overflow: hidden;
-
   border-radius: 28px;
+  height: auto;
+  flex-grow: 1;
+  min-width: 320px;
+  max-width: 420px;
 }
 
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
   background-color: #1a1919;
-
   overflow: hidden;
-
   position: relative;
 }
 
 .ag-courses-item_link_a {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 30px 20px;
-  min-height: 225px;
-  background-color: #1a1919;
-
+  height: 270px;
+  background-color: #181818;
   overflow: hidden;
-
   position: relative;
 }
 
@@ -241,19 +124,16 @@ body {
 .ag-courses-item_link_a:hover .ag-courses-item_bg {
   -webkit-transform: scale(10);
   -ms-transform: scale(10);
-  transform: scale(10);
+  transform: scale(12);
 }
 
 .ag-courses-item_title {
   min-height: 87px;
   margin: 0 0 25px;
-
   overflow: hidden;
-
   font-weight: bold;
-  font-size: 30px;
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
   color: #fff;
-
   z-index: 2;
   position: relative;
 }
@@ -261,7 +141,6 @@ body {
 .ag-courses-item_date-box {
   font-size: 18px;
   color: #fff;
-
   z-index: 2;
   position: relative;
 }
@@ -269,7 +148,6 @@ body {
 .ag-courses-item_date {
   font-weight: bold;
   color: #00ae9d;
-
   -webkit-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
@@ -279,17 +157,14 @@ body {
   height: 80px;
   width: 128px;
   background-color: #00ae9d;
-
   z-index: 1;
   position: absolute;
   top: -75px;
   right: -75px;
-
   border-radius: 50%;
-
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  transition: all 0.4s ease;
 }
 
 @media only screen and (max-width: 979px) {
@@ -331,20 +206,6 @@ body {
   }
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(-25px);
-  }
-
-  100% {
-    transform: translateX(-10px);
-  }
-}
-
-.sidenav .box ul li.hamburgerMenu {
-  display: none;
-}
-
 @media screen and (max-width: 825px) {
   .HomePage {
     display: flex;
@@ -362,79 +223,7 @@ body {
     right: auto;
   }
 
-  .sidenav {
-    float: right;
-    /* padding: 1%; */
-    width: 3rem;
-    height: 3rem;
-    min-height: 5vh;
-    top: 0;
-    position: relative;
-    right: 0;
-  }
-
-  .sidenav .box ul li {
-    display: none;
-  }
-
-  .sidenav .box ul li.hamburgerMenu {
-    top: 0;
-    right: 0;
-    display: flex;
-    padding-right: 2%;
-    padding-top: 2%;
-  }
-
-  .sidenav.responsive {
-    width: 100%;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: auto;
-  }
-
-  .sidenav.responsive .box ul li.hamburgerMenu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0% 1% 1% 1%;
-  }
-
-  .sidenav.responsive .box1 {
-    line-height: 250%;
-  }
-
-  .sidenav.responsive .box ul {
-    position: relative;
-    float: inherit;
-  }
-
-  .sidenav.responsive .box ul li {
-    display: inline;
-    float: inside;
-  }
-
-  .sidenav.responsive .box li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .sidenav.responsive .box2 .fancyfonts {
-    display: flex;
-    justify-content: center;
-  }
-
   #ResearchPage {
     margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 552px) {
-  h2 {
-    font-size: 75px;
   }
 }
