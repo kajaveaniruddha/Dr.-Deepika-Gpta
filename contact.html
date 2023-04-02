@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deepika Gupta</title>
+    <title>Contact-Deepika Gupta | IIITV-ICD</title>
+    <meta name="description" content="Contact Dr.Deepika Gupta via mail for any queries and further connection.">
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="Fonts" />
@@ -86,13 +87,18 @@
                             maxZoom: 20,
                             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                         }).addTo(map);
-
+                        
+                        //Tile
                         var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
                             maxZoom: 20,
                             attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
                         });
-
                         Stadia_AlidadeSmoothDark.addTo(map);
+
+                        // marker
+                        var singlemarker=L.marker([20.71877419593846, 70.93893591211169]);
+                        var popup=singlemarker.bindPopup("IIITV-ICD").openPopup();
+                        popup.addTo(map);
                     </script>
                 </div>
             </div>

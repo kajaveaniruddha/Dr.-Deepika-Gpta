@@ -19,7 +19,7 @@ let nav_html = `
                 class="sidePhoto-font" src="Images/Deepika-font.png" alt="Deepika" srcset=""></a></li>
           <li><a href="qualification.html">Qualification</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="professional.html">Professional</a></li>
+          <li><a href="Experience.html">Experience</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="teaching.html">Teaching</a></li>
           <li class="hamburgerMenu" id="hamBurger"><a href="javascript:void(0);" onClick="dropdownMenu()"

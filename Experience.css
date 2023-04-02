@@ -1,4 +1,4 @@
-.professionalPage {
+.ExperiencePage {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
   margin-left: 20px;
 }
 
-.professionalPage {
+.ExperiencePage {
   height: 100vh;
   width: 100%;
   overflow-y: auto;
@@ -25,7 +25,7 @@
   margin-left: 160px;
 }
 
-.professional {
+.Experience {
   display: flex;
   align-items: center;
   padding: 50px 10px 10px 10px;
@@ -203,18 +203,18 @@
     display: block;
   }
 
-  .professionalPage .resume-button {
+  .ExperiencePage .resume-button {
     top: 0;
     left: 0.5rem;
     margin-top: 0.5rem;
     right: auto;
   }
 
-  #professionalPage {
+  #ExperiencePage {
     left: 0;
   }
 
-  .professionalPage {
+  .ExperiencePage {
     margin-left: 0;
   }
 }
