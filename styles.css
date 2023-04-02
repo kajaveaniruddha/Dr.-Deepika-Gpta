@@ -371,30 +371,9 @@ body {
   margin-right: -4px;
 }
 
-
-/* .fake-h2, h2 {
-  font-family: "Georgia";
-  color: #08fdd8;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 0;
-  margin-left: 2%;
-  font-size: 85px;
-  line-height: 1.5;
-}
-
-.fake-h2 {
-  display: none
-} */
-
-/* #other_h2{
-  color: #08fdd8;
-} */
-
 .contact-des-div {
   width: 100%;
 }
-
 
 .contact-des {
   color: rgb(255, 255, 255);
@@ -403,7 +382,7 @@ body {
   width: 80%;
 }
 
-.input__field_input__field--hoshi {
+.input__field--hoshi {
   display: inline-block;
   color: rgb(141, 141, 141);
   background-color: rgb(43, 43, 43);
@@ -419,22 +398,23 @@ body {
 }
 
 .contact-form .flat-button {
+  display: inline block;
   border: 1px solid #08fdd8;
   background-color: transparent;
   color: #08fdd8;
   box-sizing: border-box;
   z-index: 3;
-  font-size: 16px;
-  padding: 8px 20px 8px 20px;
+  font-size: 14px;
+  padding: 8px 10px 8px 10px;
   position: relative;
   display: inline-block;
   margin-top: 2%;
   margin-left: 6%;
   transition: color 0.1s;
+  cursor:pointer;
 }
 
-
-.input__field_input__field--hoshi-msg {
+.input__field--hoshi-msg {
   display: inline-block;
   color: rgb(141, 141, 141);
   background-color: rgb(43, 43, 43);
@@ -507,11 +487,10 @@ body {
   text-align: center;
 }
 
-#contact ul li input {
+.contact_list input {
   width: 80%;
   margin-left: 6%;
   margin-top: 2%;
-  ;
   margin-bottom: 0.3%;
 }
 
@@ -561,7 +540,7 @@ body {
     width: 75%;
   }
 
-  .input__field_input__field--hoshi-msg {
+  .input__field--hoshi-msg {
     width: 75%;
   }
 }
