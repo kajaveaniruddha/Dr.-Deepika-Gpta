@@ -37,3 +37,13 @@ let nav_html = `
 let nav=document.getElementById('dropDownClick');
 
 nav.innerHTML=nav_html;
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
