@@ -208,3 +208,54 @@
     padding-left: 0;
   }
 }
+
+
+.heading_anim{
+  opacity: 0;
+  animation-name: delayeff;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.greyText{
+  opacity: 0;
+  animation-name: delayeff;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.ag-format-container{
+  opacity: 0;
+  animation-name: slidebottom;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidebottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.resume-button{
+  opacity: 0;
+  animation-name: delayeff;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes delayeff{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
