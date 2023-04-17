@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deepika Gupta</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Contact-Deepika Gupta | IIITV-ICD</title>
+    <meta name="description" content="Contact Dr.Deepika Gupta via mail for any queries and further connection.">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="Fonts" />
+    <link rel="shortcut icon" href="Images/D-Home.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f238228744.js" crossorigin="anonymous"></script>
     <!-- Map src -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
@@ -15,6 +18,7 @@
 </head>
 
 <body>
+    <div class="loader"><div class="loader2"></div></div>
     <div class="HomePage">
         <div class="sidenav" id="dropDownClick">
             <div class="box box1">
@@ -41,33 +45,16 @@
         </div>
 
         <div class="InnerPage InnerPage-contact">
-
             <div class="resume-contact">
                 <a href="deepikamam.pdf" target="_blank" class="resume-button" rel="resume">Resume</a>
             </div>
-
             <div class="Contact_head" style="display: flex">
-
                 <div class="contact-Info">
-
                     <div class="contact-me">
-
                         <section class="page-out" id="page-out">
-
-                            <h1 aria-label="Dr. Deepika Gupta" class="name">
-                                <span class="colChange" aria-hidden="true" style="opacity: 1;">Contact Me</span>
-                            </h1>
+                            <h1>Contact Me</h1>
                         </section>
-
                     </div>
-                    <div class="contact-des-div" style="padding-left: 3%">
-                        <p class="contact-des" id="section-contact">
-                            I’m interested in freelance opportunities – especially ambitious or large projects. However,
-                            if
-                            you have other request or question, don’t hesitate to use the form.
-                        </p>
-                    </div>
-
                     <div class="contact-form" style="width: 100%">
                         <form class="contact_list" id="contact" autocomplete="off" action="https://formsubmit.co/bb2fa15dc544fd5a365530694d847108" method="POST">
                             <input name="name" id = "name" class="input__field--hoshi" placeholder="Name" type="text" required>
@@ -93,56 +80,27 @@
                             maxZoom: 20,
                             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                         }).addTo(map);
-
+                        
+                        //Tile
                         var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
                             maxZoom: 20,
                             attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
                         });
-
                         Stadia_AlidadeSmoothDark.addTo(map);
+
+                        // marker
+                        var singlemarker=L.marker([20.71877419593846, 70.93893591211169]);
+                        var popup=singlemarker.bindPopup("IIITV-ICD").openPopup();
+                        popup.addTo(map);
                     </script>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <script>
-        function dropdownMenu() {
-            let id = document.getElementById("dropDownClick")
-            let ham = document.getElementById("hamBurger")
-            let anchor = ham.getElementsByTagName('a')
-
-            if (id.className === "sidenav") {
-                id.className += " responsive"
-                anchor[0].innerHTML = "&#10060;"
-            } else {
-                id.className = "sidenav"
-                anchor[0].innerHTML = '&#9776;';
-            }
-        }
+    <script src="index.js"></script>
 
     </script>
-
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "name@mail.com",
-            Password : "password",
-            To : 'recieve@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : document.getElementById("subject").value,
-            Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Message: " + document.getElementById("message").value
-        }).then(
-        message => alert("Message Sent Successfully")
-        );
-        }
-    </script> -->
-
 </body>
 
 </html>

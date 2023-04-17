@@ -1,4 +1,4 @@
-.InnerPage {
+.ExperiencePage {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,47 +17,47 @@
   margin-left: 20px;
 }
 
-.greyText {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  padding: 0;
-  color: #8d8d8d;
-  letter-spacing: 2px;
-  font-size: 20px;
-  position: relative;
-  margin-left: 40px;
-}
-
-#TeachingPage {
+.ExperiencePage {
   height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: block;
   width: 100%;
-  position: absolute;
-  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 160px;
 }
 
-.Teaching {
+.Experience {
   display: flex;
   align-items: center;
   padding: 50px 10px 10px 10px;
-  position: relative;
   overflow-x: hidden;
-  height: 100%;
-  overflow-y: auto;
-  margin-left: 160px;
+  overflow-y: hidden;
+}
+
+.research_experience {
+  min-height: 100vh;
+}
+
+.scrolldown-right {
+  color: #fff;
+  position: absolute;
+  right: -20px;
+  bottom: 3rem;
+  transform: rotate(90deg);
+  font-size: 14px;
+}
+
+.scrolldown-right span {
+  display: flex;
+  animation: scroll 0.5s linear infinite alternate-reverse;
 }
 
 .ag-format-container {
   margin-top: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 1142px;
 }
 
 .ag-courses_box {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
@@ -65,30 +65,32 @@
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
+  padding: 30px 0;
 }
 
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
-  margin: 0 15px 30px 0;
+  margin: 0 15px 30px;
   overflow: hidden;
   border-radius: 28px;
-  height: auto;
-  flex-grow: 1;
-  min-width: 310px;
-  max-width: 420px;
 }
 
 .ag-courses-item_link {
   display: block;
-  min-height: 200px;
   padding: 30px 20px;
   background-color: #1a1919;
   overflow: hidden;
   position: relative;
-  min-width: 300px;
+}
+
+.ag-courses-item_link_a {
+  display: block;
+  padding: 30px 20px;
+  min-height: 225px;
+  background-color: #1a1919;
+  overflow: hidden;
+  position: relative;
 }
 
 .ag-courses-item_link:hover,
@@ -97,10 +99,22 @@
   color: #000000;
 }
 
+.ag-courses-item_link_a:hover,
+.ag-courses-item_link_a:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #000000;
+}
+
 .ag-courses-item_link:hover .ag-courses-item_bg {
   -webkit-transform: scale(10);
   -ms-transform: scale(10);
-  transform: scale(10);
+  transform: scale(12);
+}
+
+.ag-courses-item_link_a:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(12);
 }
 
 .ag-courses-item_title {
@@ -108,7 +122,7 @@
   margin: 0 0 25px;
   overflow: hidden;
   font-weight: bold;
-  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+  font-size: 30px;
   color: #fff;
   z-index: 2;
   position: relative;
@@ -143,7 +157,7 @@
   transition: all 0.25s ease;
 }
 
-@media only screen and (max-width: 979px) {
+@media only screen and (max-width: 930px) {
   .ag-courses_item {
     -ms-flex-preferred-size: calc(50% - 30px);
     flex-basis: calc(50% - 30px);
@@ -152,11 +166,9 @@
   .ag-courses-item_title {
     font-size: 24px;
   }
-}
 
-@media only screen and (max-width: 767px) {
   .ag-format-container {
-    width: 96%;
+    width: 100%;
   }
 }
 
@@ -191,20 +203,18 @@
     display: block;
   }
 
-  .Teaching {
-    padding: 50px 10px 10px 20px;
-    margin-left: 0;
-  }
-
-  .InnerPage .resume-button {
+  .ExperiencePage .resume-button {
     top: 0;
     left: 0.5rem;
     margin-top: 0.5rem;
     right: auto;
   }
 
-  #TeachingPage {
+  #ExperiencePage {
     left: 0;
-    padding-left: 0;
+  }
+
+  .ExperiencePage {
+    margin-left: 0;
   }
 }

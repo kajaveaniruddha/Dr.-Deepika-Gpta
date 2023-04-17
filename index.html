@@ -5,40 +5,23 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deepika Gupta</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Deepika Gupta | Assistant Professor-IIITV-ICD</title>
+  <meta name="description" content="Deepika Gupta is an Assistant Professor in the Department of Computer Science and Engineering at  IIIT-Vadodara International Campus Diu. Before joining this esteemed academic institution, she worked as a Senior Software Engineer atSamsung Research Institute in Delhi for a period of four and a half years where she gained valuable industry experience and honed her skills in software development.Her contributions to the field of Computer Science have been significant, driven by her research interests in Document Image Processing, Image Processing, Computer Vision, Machine Learning, Deep Learning, and Pattern Recognition.
+  She received her Ph.D. in Computer Science and Engineering from the prestigious IIT (ISM) Dhanbadin the year 2021.Prior to her Ph.D.,she completed her M.Tech in Computer Science and Engineering from MNIT Jaipur in 2011 and B.Tech from Uttar Pradesh Technical University in 2008.Through her academic and professional accomplishments,she has demonstrated an outstanding level of expertise in her chosen field.">
+  <link rel="stylesheet" href="Homepage.css" />
+  <link rel="stylesheet" href="nav.css" />
   <link rel="stylesheet" href="Fonts" />
+  <link rel="shortcut icon" href="Images/D-Home.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/f238228744.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="HomePage">
+  <div class="loader"><div class="loader2"></div></div>
 
-    <div class="sidenav" id="dropDownClick">
-      <div class="box box1">
-        <ul>
-          <li class="Image"><a href="http://"><img class="sidePhoto" src="Images/profile.jpg" alt="profile photo" /><img
-                class="sidePhoto-font" src="Images/Deepika-font.png" alt="Deepika" srcset=""></a></li>
-          <li><a href="qualification.html">Qualification</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="professional.html">Professional</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li class="hamburgerMenu" id="hamBurger"><a href="javascript:void(0);" onClick="dropdownMenu()"
-              style="border: 0px; padding: 5px;padding-top: 10px; width: 40px; height: 40px;">&#9776;</a></li>
-        </ul>
-
-      </div>
-      <div class="box box2">
-        <ul class="fancyfonts">
-          <li><a href="https://www.linkedin.com/in/dr-deepika-gupta-08364b11" target="blank"><i id="fancy1"
-                class="fa-brands fa-linkedin-in"></i></a></li>
-          <li><a href="https://github.com/kajaveaniruddha/Dr.-Deepika-Gupta" target="blank"><i id="fancy2"
-                class="fa-brands fa-github"></i></a></li>
-        </ul>
-      </div>
-    </div>
-
+  <div class="HomePage">
+    <nav class="sidenav" id="dropDownClick">
+      <!-- sidenav from index.js -->
+    </nav>
 
     <div class="InnerPage" id="innerpage">
       <a href="deepikamam.pdf" target="_blank" class="resume-button" rel="resume">Resume</a>
@@ -46,7 +29,6 @@
 
         <div class="Text">
           <section class="home" id="home">
-            <div class ="heading">
             <h1 aria-label="Dr. Deepika Gupta" class="name">
               <span class="colChange" aria-hidden="true" style="opacity: 1;">D</span><span class="colChange"
                 aria-hidden="true" style="opacity: 1;">r</span><span class="colChange" aria-hidden="true"
@@ -65,12 +47,11 @@
                 class="colChange" aria-hidden="true" style="opacity: 1;">a</span>
               <br>
             </h1>
-          </div>
-          <div class="desc">
-            <p class="greyText" id="greyText">
-              Assistant Professor <br>IIIT Vadodara-International Campus Diu
-            </p>
-          </div>
+            <div class="desc">
+              <p class="greyText" id="greyText">
+                Assistant Professor <br>IIIT Vadodara-International Campus Diu
+              </p>
+            </div>
           </section>
         </div>
 
@@ -82,26 +63,16 @@
       <div class="scrolldown-right">
         <span class="bounce1">scroll down &rarr;</span>
       </div>
+      <!-- About me -->
+      <div class="TextArea2">
+        <h2 class="aboutMe">About me</h2>
+        <p class="aboutP" id="para1">Deepika Gupta is an Assistant Professor in the Department of Computer Science and Engineering at <a href="http://diu.iiitvadodara.ac.in/"><span class="underline">IIIT-Vadodara International Campus Diu</span></a>. Before joining this esteemed academic institution, she worked as a Senior Software Engineer at <a href="https://research.samsung.com/sri-d"><span class="underline">Samsung Research Institute</span></a> in Delhi for a period of four and a half years where she gained valuable industry experience and honed her skills in software development.Her contributions to the field of Computer Science have been significant, driven by her research interests in Document Image Processing, Image Processing, Computer Vision, Machine Learning, Deep Learning, and Pattern Recognition.</p>
+        <p class="aboutP" id="para2">She received her Ph.D. in Computer Science and Engineering from the prestigious <a href="https://www.iitism.ac.in/"><span class="underline">IIT (ISM) Dhanbad</span></a> in the year 2021.Prior to her Ph.D.,she completed her M.Tech in Computer Science and Engineering from <a href="https://mnit.ac.in/"><span class="underline">MNIT Jaipur</span></a> in 2011 and B.Tech from Uttar Pradesh Technical University in 2008.Through her academic and professional accomplishments,she has demonstrated an outstanding level of expertise in her chosen field.</p>
+      </div>
     </div>
-  </nav>
-  
+  </div>
 
-  <script>
-    function dropdownMenu() {
-      let id = document.getElementById("dropDownClick")
-      let ham = document.getElementById("hamBurger")
-      let anchor = ham.getElementsByTagName('a')
-
-      if (id.className === "sidenav") {
-        id.className += " responsive"
-        anchor[0].innerHTML = "&#x2716;"
-      } else {
-        id.className = "sidenav"
-        anchor[0].innerHTML = '&#9776;';
-      }
-    }
-
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>
