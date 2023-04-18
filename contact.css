@@ -84,6 +84,14 @@ body {
   margin-left: 6%;
   transition: color 0.1s;
   cursor:pointer;
+  background: linear-gradient(to right, #19433c 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.contact-form .flat-button:hover{
+  background-position: left bottom;
 }
 
 .input__field--hoshi-msg {
@@ -224,3 +232,59 @@ body {
   }
 }
 
+.heading_anim{
+  opacity: 0;
+  animation-name: delayeff;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.contact-form{
+  opacity: 0;
+  animation: slidebottom 2s forwards;
+}
+
+@keyframes slidebottom{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.flat-button{
+  opacity: 0;
+  animation: 1.2s delayeff 1s forwards;
+}
+
+.resume-button{
+  opacity: 0;
+  animation: 2s delayeff 1s linear forwards;
+}
+
+@keyframes delayeff{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+
+.map{
+  animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft{
+  0%{
+      transform: translate(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translate(0px);
+      opacity: 1;
+  }
+}
