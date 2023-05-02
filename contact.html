@@ -13,8 +13,7 @@
     <link rel="shortcut icon" href="Images/D-Home.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f238228744.js" crossorigin="anonymous"></script>
     <!-- Map src -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgcL9WlQurkB-kRTgVhM62dKP7c8p1Hl4&amp&callback=initMap" async defer></script>
 </head>
 
 <body>
@@ -48,27 +47,21 @@
                 </div>
 
                 <!-- MAP -->
-                <div class="map" id="map">
-                    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-                        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+                <div id="map" class="map">
                     <script>
-                        var map = L.map('map').setView([20.71877419593846, 70.93893591211169], 15);
-                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            maxZoom: 20,
-                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                        }).addTo(map);
-                        
-                        //Tile
-                        var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-                            maxZoom: 20,
-                            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-                        });
-                        Stadia_AlidadeSmoothDark.addTo(map);
-
-                        // marker
-                        var singlemarker=L.marker([20.71877419593846, 70.93893591211169]);
-                        var popup=singlemarker.bindPopup("IIITV-ICD").openPopup();
-                        popup.addTo(map);
+                        function initMap() {
+                            var myLatLng = { lat: 20.71877419593846, lng: 70.93893591211169 };
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 16,
+                                center: myLatLng,
+                                mapTypeId: 'satellite'
+                            });
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                title: 'Currrent Location'
+                            });
+                        }
                     </script>
                 </div>
             </div>
