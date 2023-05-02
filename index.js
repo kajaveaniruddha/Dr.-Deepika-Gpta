@@ -18,10 +18,10 @@ let nav_html = `
           <li class="Image"><a href="index.html"><img class="sidePhoto" src="Images/profile.jpg" alt="profile photo" /><img
                 class="sidePhoto-font" src="Images/Deepika-font.png" alt="Deepika" srcset=""></a></li>
           <li><a href="qualification.html">Qualification</a></li>
-          <li><a href="contact.html">Contact</a></li>
           <li><a href="Experience.html">Experience</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li class="hamburgerMenu" id="hamBurger"><a href="javascript:void(0);" onClick="dropdownMenu()"
               style="border: 0px; padding: 5px;padding-top: 10px; width: 40px; height: 40px;">&#9776;</a></li>
         </ul>

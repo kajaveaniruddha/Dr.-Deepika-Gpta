@@ -262,20 +262,6 @@
     opacity: 100;
   }
 }
-.heading_anim{
-  opacity: 0;
-  animation-name: delayeff;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-.ag-format-container{
-  opacity: 0;
-  animation-name: slidebottom;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-}
 
 @keyframes slidebottom{
     0%{
