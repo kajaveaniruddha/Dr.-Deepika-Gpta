@@ -15,7 +15,7 @@ function dropdownMenu() {
 let nav_html = `
 <div class="box box1">
         <ul>
-          <li class="Image"><a href="index.html"><img class="sidePhoto" src="Images/profile.jpg" alt="profile photo" /><img
+          <li class="Image"><a href="index.html"><img class="sidePhoto" src="Images/deepikaface.jpg" alt="profile photo" /><img
                 class="sidePhoto-font" src="Images/Deepika-font.png" alt="Deepika" srcset=""></a></li>
           <li><a href="qualification.html">Qualification</a></li>
           <li><a href="Experience.html">Experience</a></li>
